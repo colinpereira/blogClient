@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+
+.homeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Kaushan Script", cursive;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 400;
+
+  height: 175px;
+  width: 100vw;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(./Images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 10px 20px 10px;
+}
+
+.postContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 20px 30px 20px 30px;
+  /* display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between; */
+  width: 95%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(197, 203, 227);
+  border-radius: 10px;
+  height: auto;
+  width: 400px;
+}
+
+.postTitle {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 5px 5px 5px 0px;
+  width: 100%;
+  border-bottom: solid 2px #4056a1;
+  border-radius: 5px;
+}
+
+.postUser {
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 5px 5px 5px;
+}
+
+.postDescription {
+  margin: 5px 5px 5px 5px;
+  padding: 4px, 4px;
+
+  width: 100%;
+  height: 110px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.postActionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.postActionContainer img {
+  height: 25px;
+  margin: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+
+.postActionContainer img:hover {
+  transform: rotate(25deg);
+  transition: all 0.2s ease-in-out;
+  opacity: 0.6;
+}
+
+.postActionContainer p {
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #d79922;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.postActionContainer p:hover {
+  opacity: 0.6;
+  transition: all 0.2s ease-out;
+}
